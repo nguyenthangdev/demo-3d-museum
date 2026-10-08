@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101a1b"><title>Tham quan 3D — Aura Museum</title><link rel="stylesheet" href="./css/style.css"></head>
+<body data-page="tour" class="tour-page">
+  <header class="site-header site-header--tour"><a class="brand" href="./index.html"><span class="brand__mark">✦</span><span>AURA <small>MUSEUM</small></span></a><nav class="desktop-nav" aria-label="Điều hướng chính"><a data-nav="home" href="./index.html">Trang chủ</a><a data-nav="tour" href="./tour.html">Tham quan 3D</a><a data-nav="collection" href="./collection.html">Bộ sưu tập</a><a data-nav="admin" href="./admin.html">Content Studio</a></nav><span class="tour-header-note">ĐANG THAM QUAN <i></i></span><button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button><nav class="mobile-menu" aria-label="Điều hướng di động"><a href="./index.html">Trang chủ</a><a href="./tour.html">Tham quan 3D</a><a href="./collection.html">Bộ sưu tập</a><a href="./admin.html">Content Studio</a></nav></header>
+  <main class="tour-main"><div id="tour-scene" class="tour-scene"></div><div id="hotspots" class="hotspots-layer"></div><div class="tour-vignette"></div>
+    <div class="tour-top-left"><p class="eyebrow eyebrow--light">PHÒNG TRƯNG BÀY 01 / 01</p><h1>Không gian Di sản</h1><span>05 hiện vật mô phỏng · Trải nghiệm tương tác</span></div>
+    <div class="tour-top-right"><button class="tour-pill" id="help-button" type="button">⌘ <span>Hướng dẫn</span></button><button class="tour-pill" id="vr-button" type="button" hidden>◉ <span>Vào VR</span></button><span class="xr-status" id="xr-status">Đang kiểm tra WebXR…</span></div>
+    <div class="tour-crosshair" aria-hidden="true">+</div>
+    <div class="tour-guide" id="tour-guide"><button class="tour-guide__close" id="close-help" type="button" aria-label="Đóng hướng dẫn">×</button><p class="eyebrow">CÁCH THAM QUAN</p><h2>Chào mừng bạn.</h2><div><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>Di chuyển</span></div><div><span class="guide-icon">↔</span><span>Kéo chuột để xoay góc nhìn</span></div><div><span class="guide-icon">✦</span><span>Chọn điểm sáng hoặc vật thể để xem thông tin</span></div><p class="tour-guide__mobile">Trên điện thoại: dùng joystick bên trái và vuốt khung hình để xoay.</p><button class="button button--gold" id="start-tour" type="button">Bắt đầu tham quan <span>→</span></button></div>
+    <div class="tour-joystick" id="joystick" aria-label="Điều khiển di chuyển cảm ứng"><div class="tour-joystick__thumb"></div></div>
+    <div class="tour-bottom"><div class="tour-bottom__intro"><span class="mini-status"><i></i> BẠN ĐANG Ở PHÒNG 01</span><strong>Chọn một hiện vật</strong></div><div class="tour-exhibits" id="tour-exhibits"></div><button class="tour-bottom__next" id="next-exhibit" type="button" aria-label="Chọn hiện vật tiếp theo">→</button></div>
+    <aside class="tour-info" id="tour-info" aria-label="Thông tin hiện vật" hidden><button class="tour-info__close" id="close-info" type="button" aria-label="Đóng thông tin">×</button><div id="tour-info-content"></div></aside>
+  </main>
+  <script type="module" src="./js/tour.js"></script>
+</body>
+</html>

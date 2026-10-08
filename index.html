@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101a1b"><title>Aura Museum — Một hành trình, nhiều góc nhìn</title>
+  <meta name="description" content="Bản demo bảo tàng 3D Aura Museum: khám phá hiện vật, tương tác trong không gian 3D và xem khung quản trị nội dung.">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Aura Museum - Trang chủ"><span class="brand__mark">✦</span><span>AURA <small>MUSEUM</small></span></a>
+    <nav class="desktop-nav" aria-label="Điều hướng chính"><a data-nav="home" href="./index.html">Trang chủ</a><a data-nav="tour" href="./tour.html">Tham quan 3D</a><a data-nav="collection" href="./collection.html">Bộ sưu tập</a><a data-nav="admin" href="./admin.html">Content Studio</a></nav>
+    <a class="header-cta" href="./tour.html">Bắt đầu khám phá <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav class="mobile-menu" aria-label="Điều hướng di động"><a href="./index.html">Trang chủ</a><a href="./tour.html">Tham quan 3D</a><a href="./collection.html">Bộ sưu tập</a><a href="./admin.html">Content Studio</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__copy"><p class="eyebrow eyebrow--light"><span class="status-dot"></span> Một bảo tàng, nhiều cách cảm nhận</p>
+        <h1>Di sản sống<br>trong <em>không gian số.</em></h1>
+        <p class="hero__lead">Bước vào một căn phòng 3D, tiến gần từng hiện vật và khám phá câu chuyện phía sau qua hình ảnh, thuyết minh và bản chép lời.</p>
+        <div class="hero__actions"><a class="button button--gold" href="./tour.html">Vào bảo tàng <span aria-hidden="true">↗</span></a><a class="button button--ghost" href="./collection.html">Xem bộ sưu tập <span aria-hidden="true">→</span></a></div>
+        <div class="hero__note"><span class="hero__note-line"></span> Trải nghiệm trên desktop, điện thoại và thiết bị VR hỗ trợ WebXR</div>
+      </div>
+      <div class="hero__visual"><div id="hero-scene" class="hero__canvas" aria-hidden="true"></div><div class="hero__visual-top">PHÒNG 01 <span>·</span> KHÔNG GIAN DI SẢN</div><div class="hero__visual-bottom"><span><i></i> 3D LIVE PREVIEW</span><span>01 / 05</span></div><a class="hero__visual-link" href="./tour.html" aria-label="Vào không gian 3D">↗</a></div>
+      <div class="hero__vertical">AURA MUSEUM — DIGITAL EXPERIENCE</div>
+    </section>
+    <div class="marquee" aria-hidden="true"><span>KHÁM PHÁ</span><b>✦</b><span>LẮNG NGHE</span><b>✦</b><span>CHẠM VÀO DI SẢN</span><b>✦</b><span>KHÁM PHÁ</span><b>✦</b><span>LẮNG NGHE</span></div>
+    <section class="section section--cream" id="featured"><div class="section-head"><div><p class="eyebrow">BỘ SƯU TẬP NỔI BẬT</p><h2>Năm hiện vật.<br><em>Năm câu chuyện.</em></h2></div><a class="section-link" href="./collection.html">Xem toàn bộ bộ sưu tập <span aria-hidden="true">↗</span></a></div><div class="featured-grid" id="featured-grid"></div><p class="section-footnote">* Hiện vật và nội dung trong bản demo là mô phỏng, chưa đại diện cho tư liệu lịch sử đã kiểm chứng.</p></section>
+    <section class="experience"><div class="experience__mark">✦</div><div><p class="eyebrow eyebrow--light">KHÔNG CHỈ LÀ MỘT TRANG WEB</p><h2>Đi theo cách<br><em>của riêng bạn.</em></h2></div><div class="experience__cards"><article><span>01</span><h3>Đi vào không gian</h3><p>Dùng WASD và chuột trên desktop, nút điều khiển cảm ứng trên điện thoại.</p></article><article><span>02</span><h3>Chạm để khám phá</h3><p>Chọn điểm tương tác để xem ảnh, nội dung và nghe thuyết minh bằng giọng máy.</p></article><article><span>03</span><h3>Đọc theo nhịp riêng</h3><p>Bản chép lời luôn đi cùng audio. Chế độ web vẫn dùng được khi không có WebXR.</p></article></div></section>
+    <section class="final-cta"><div><p class="eyebrow">CHUYẾN THAM QUAN BẮT ĐẦU TẠI ĐÂY</p><h2>Hãy bước vào<br><em>Aura Museum.</em></h2></div><a class="button button--dark" href="./tour.html">Khám phá phòng trưng bày <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand brand--footer" href="./index.html"><span class="brand__mark">✦</span><span>AURA <small>MUSEUM</small></span></a><p>Bản demo giao diện. Dữ liệu hiện vật là mô phỏng.</p><nav><a href="./tour.html">Tham quan</a><a href="./collection.html">Bộ sưu tập</a><a href="./admin.html">Content Studio</a></nav><span>© 2026 Aura Museum</span></footer>
+  <script type="module" src="./js/home.js"></script>
+</body>
+</html>
